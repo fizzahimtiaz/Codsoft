@@ -1,0 +1,125 @@
+/*.................CUSTOM CSS START..................*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+:root{
+    --color-bg: #1f2938;
+    --color-variant: #01db1b;
+    --color-primary: #33aaff;
+    --color-white: white;
+    --color-light: rgba(225,225,225,0.7);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color-white);
+    background: var(--color-bg);
+    line-height: 1.7;
+    letter-spacing: .4px;
+    background-image: url("./img/bg.jpg");
+
+}
+
+.container{
+    max-width: 1320px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+section{
+    margin-top:8rem;
+}
+
+h2,h5{
+    color: var(--color-light);
+    text-align: center;
+}
+h2{
+    margin-bottom: 3rem;
+}
+.text-light{
+    color: var(--color-light);
+}
+
+a{
+    color:var(--color-primary);
+}
+.btn{
+    width:max-content;
+    display:inline-block;
+    color: var(--color-primary);
+    padding: .75rem 1.2rem;
+    cursor: pointer;
+    border: 1px solid var(--color-white);
+    border-radius: .4rem;
+}
+.btn:hover{
+    color:var(--color-bg);
+    border: transparent;
+    background: var(--color-white);
+
+}
+.btn-variant{
+    background: var(--color-var);
+    color: var(--color-bg);
+
+}
+.btn-primary{
+    background: var(--color-primary);
+    color:var(--color-bg);
+    border: 1px solid var(--color-primary);
+}
+
+img{
+    display: inline-block;
+    width:100%;
+    object-fit:cover;
+}
+/*.................CUSTOM CSS END..................*/
+
+/*.................CUSTOM CSS MEDIA SCRIN.START..................*/
+/*.................CUSTOM CSS MEDIA SCRIN.START..................*/
+
+@media(max-width:1024px){
+    .container{
+        width: 80%;
+    }
+    section{
+        margin-top:6rem;
+    }
+}
+@media(max-width:600px){
+    .container{
+        width: 90%;
+    }
+    section{
+        margin-top:2rem;
+    }
+}
+/*.................CUSTOM CSS MEDIA SCRIN.END..................*/
+/*.................CUSTOM CSS MEDIA SCRIN.END..................*/
